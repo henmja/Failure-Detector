@@ -1,5 +1,5 @@
 # Simple failure detector using heartbeat
-Three nodes are used for this example.
+Three nodes are used in this example.
 
 ## Background
 Each node has a server and a client. Each client broadcasts heartbeats to all the servers (which means that each node also sends heartbeats to themselves). If a client does not receive a reply within 10 seconds, the client will broadcast to all the servers that the given node has disconnected.
